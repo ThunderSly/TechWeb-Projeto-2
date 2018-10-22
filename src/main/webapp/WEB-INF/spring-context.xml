@@ -12,6 +12,8 @@
 	<context:component-scan base-package="mvc" />
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
+<!-- 	<mvc:resources mapping="/resources/**" location="/resources/" />  
+ -->	
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 	</bean>
