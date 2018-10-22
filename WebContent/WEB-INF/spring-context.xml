@@ -12,14 +12,12 @@
 	<context:component-scan base-package="mvc" />
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
-<!-- 	<mvc:resources mapping="/resources/**" location="/resources/" />  
- -->	
-	<bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-	</bean>
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
+	</bean>
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 	</bean>
 </beans>
